@@ -19,7 +19,7 @@
     background-color: #222;
     color: #fff;
     font-size: 16px;
-    font-family: Montserrat;
+    font-family: Montserrat; sans-serif;
     transition: border-color 0.3s;
     margin-top: 5px;
   }
@@ -36,6 +36,7 @@
   }
 
   .contenedor-contacto .btn {
+    font-family: Montserrat; sans-serif;
     width: 360px;
     padding: 12px 20px;
     background-color: #007bff;
@@ -51,6 +52,9 @@
     background-color: #0056b3;
   }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <section>
   <div class="contenedor-contacto">
@@ -67,7 +71,7 @@
       <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe un mensaje"></textarea>
 
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="http://localhost:4321/gracias" />
+      <input type="hidden" name="_next" value="/gracias" />
 
       <input type="submit" class="btn" value="Enviar" />
     </form>
