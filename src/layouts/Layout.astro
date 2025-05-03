@@ -1,0 +1,101 @@
+---
+import Skills from '../components/Skills.astro';
+import Contacto from '../components/Contacto.astro';
+
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio AARS</title>
+  <link rel="icon" type="image/x-icon" href="/public/suitcase-lg-fill.svg">
+</head>
+<body>
+  <header id="home">
+    <div class="home-foto">
+      <img src="/images/mi-foto.png" alt="">
+    </div>
+    <div class="home-nombre">    
+      <h1>PORTAFOLIO</h1>
+      <h2>Adiel Alejandro Rodriguez Salgado</h2>
+      <p>Desarrollador Web | Creativo | Innovador | Responsable</p>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/rodriguez.a.adiel/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/adiel-alejandro-rodr%C3%ADguez-salgado-526a561b3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Adiel-Alejandro" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      
+    </div>
+
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre Mí</h2>
+    <p>Soy un desarrollador web en formación, apasionado por crear soluciones digitales que sean funcionales, limpias y modernas. Aunque estoy comenzando en este campo, tengo un gran interés por seguir aprendiendo y mejorando mis habilidades con el tiempo. Mi enfoque está en construir experiencias web accesibles, intuitivas y eficientes. Me gusta enfrentar nuevos retos, trabajar en equipo y mantenerme actualizado con las últimas tecnologías para ofrecer resultados de calidad.</p>
+    <a href="/CV.pdf" download class="btn-descargar">Descargar CV</a>
+  </section>
+
+
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyectos-container">
+    <a href="https://blog-astro-alpha.vercel.app/" class="proyecto" target="_blank" rel="noopener noreferrer">
+      <img src="../../public/images/Blog-Astro.jpeg" alt="">
+      <h3>Proyecto 1</h3>
+      <p>Descripción breve del proyecto, tecnologías utilizadas y objetivo principal.</p>
+    </a>
+    <a href="https://bootcampweb-n1u2.vercel.app/" class="proyecto" target="_blank" rel="noopener noreferrer">
+      <img src="../../public/images/Calculadora.jpeg" alt="">
+      <h3>Proyecto 2</h3>
+      <p>Descripción breve del proyecto, tecnologías utilizadas y objetivo principal.</p>
+    </a>
+    <a href="https://bootcampweb-omega.vercel.app/" class="proyecto" target="_blank" rel="noopener noreferrer">
+      <img src="../../public/images/API.jpeg" alt="">
+      <h3>Proyecto 3</h3>
+      <p>Descripción breve del proyecto, tecnologías utilizadas y objetivo principal.</p>
+    </a>
+    <a href="https://mvcjsin-placeholder.vercel.app/" class="proyecto" target="_blank" rel="noopener noreferrer">
+      <img src="../../public/images/MVC_JSIN.jpeg" alt="">
+      <h3>Proyecto 4</h3>
+      <p>Descripción breve del proyecto, tecnologías utilizadas y objetivo principal.</p>
+    </a>
+    <a href="https://blog-gilt-phi-24.vercel.app/" class="proyecto" target="_blank" rel="noopener noreferrer">
+      <img src="../../public/images/Blog.jpeg" alt="">
+      <h3>Proyecto 5</h3>
+      <p>Descripción breve del proyecto, tecnologías utilizadas y objetivo principal.</p>
+    </a>
+  </div>
+    <div>
+      <a href="/proyectos" class="btn" value="Proyectos">Proyectos</a>
+    </div>
+  </section>
+
+
+  <section id="contenedor">
+    <div class="contenedor-habilidades">
+      <h2>Habilidades</h2>
+      <Skills />
+    </div>
+    <div class="contenedor-contacto">
+      <h2>Contacto</h2>
+      <Contacto />   
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 AARS. Todos los derechos reservados.
+  </footer>
+</body>
+
+</html>

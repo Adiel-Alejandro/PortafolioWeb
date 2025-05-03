@@ -1,0 +1,98 @@
+---
+const tecnologias = [
+  { nombre: "Astro", nivel: "30%" },
+  { nombre: "HTML", nivel: "80%" },
+  { nombre: "CSS", nivel: "70%" },
+  { nombre: "JavaScript", nivel: "50%" },
+];
+
+const herramientas = [
+  { nombre: "GitHub", nivel: "50%" },
+  { nombre: "Figma", nivel: "60%" },
+  { nombre: "Jira", nivel: "20%" },
+];
+---
+<style>
+  section {
+    width: 500px;
+    margin-left: 0;
+    margin-right: 100px;
+    padding: 2rem 1rem;
+    background-color: #121212;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 5px;
+
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+  }
+
+  .grupo h3 {
+    font-size: 21px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #3b82f6;
+    padding-bottom: 0.5rem;
+  }
+
+  .etiqueta {
+    margin-bottom: 4px;
+    font-size: 15px;
+  }
+
+  .barra {
+    background: #333;
+    border-radius: 8px;
+    height: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .relleno {
+    background: #3b82f6;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+</style>
+
+<section>
+  <div class="contenedor">
+    <div class="grupo">
+      <h3>Tecnologías</h3>
+      {tecnologias.map(({ nombre, nivel }) => (
+        <>
+          <div class="etiqueta">{nombre}</div>
+          <div class="barra"><div class="relleno" data-width={nivel}></div></div>
+        </>
+      ))}
+    </div>
+
+    <div class="grupo">
+      <h3>Herramientas</h3>
+      {herramientas.map(({ nombre, nivel }) => (
+        <>
+          <div class="etiqueta">{nombre}</div>
+          <div class="barra"><div class="relleno" data-width={nivel}></div></div>
+        </>
+      ))}
+    </div>
+  </div>
+
+  <script is:browser>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".relleno").forEach(barra => {
+        barra.style.width = barra.getAttribute("data-width");
+      });
+    });
+  </script>
+</section>
