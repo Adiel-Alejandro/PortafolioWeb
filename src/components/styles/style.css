@@ -185,13 +185,14 @@ h3 {
 
 #contenedor {
   display: flex;
-  flex-direction: row;
-  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
 .contenedor-habilidades h2 {
   align-items: center;
-  padding-left: 150px;
+  padding-left: 100px;
 }
 
 .contenedor-contacto h2 {
@@ -262,6 +263,10 @@ footer {
     padding-left: 0;
     text-align: center;
   }
+  footer {
+    width: 100%;
+    font-size: 11px;
+  }
 }
 
 /* Móviles */
@@ -302,5 +307,9 @@ footer {
 
   h3 {
     font-size: 20px;
+  }
+  footer {
+    width: 100%;
+    font-size: 11px;
   }
 }
