@@ -1,202 +1,306 @@
-    body {
-      margin: 0;
-      font-family: "Montserrat", sans-serif;
-      background-color: #1a1a1a;
-      color: #f0f0f0;       
-      
-    }
-    #home {
-      background-color: #222;
-      padding: 2rem;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      
-    }
+* {
+  color: white;
+}
 
-    .home-foto{
-      margin-left: 300px;
-    }
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
 
-    img{
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
-    }
+#home {
+  background-color: #222;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-    h1{
-      font-size: 60px;  
-      text-align: left;
-    }
+.home-foto {
+  margin-left: 300px;
+}
 
-    .home-nombre{
-      margin-left: 150px;
-    }
+img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
 
-    .home-nombre p{
-      font-size: 20px;
-      text-align: left;
-    }
+h1 {
+  font-size: 60px;
+  text-align: left;
+}
 
-    .home-nombre h2{
-      text-align: left;
-      font-size: 30px;
-      align-items: center;
-      color: white;
-    }
+.home-nombre {
+  margin-left: 150px;
+}
 
-    .redes-sociales {
-      margin-top: 20px;
-    }
-    
-    .redes-sociales a {
-      color: white;
-      font-size: 50px;
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    
-    .redes-sociales a:hover {
-      color: #007bff;
-    }
-    
+.home-nombre p {
+  font-size: 20px;
+  text-align: left;
+}
 
-    #sobre-mi p{
-      text-align: justify;
-      font-size: 25px;
-    }
+.home-nombre h2 {
+  text-align: left;
+  font-size: 30px;
+  align-items: center;
+  color: white;
+}
 
-    .btn-descargar {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-    
-    .btn-descargar:hover {
-      background-color: #0056b3;
-    }
-   
+.redes-sociales {
+  margin-top: 20px;
+}
 
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
+.redes-sociales a {
+  color: white;
+  font-size: 50px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-    h2 {
-      color: #006eff;
-      font-size: 40px;
-    }
+.redes-sociales a:hover {
+  color: #007bff;
+}
 
-    #proyectos {
-      padding: 20px;
-      text-align: center;
-    }
+#sobre-mi p {
+  text-align: justify;
+  font-size: 25px;
+  width: 100%;
+  color: white;
+}
 
-    .proyectos-container {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      gap: 20px;
-      padding-bottom: 10px;
-    }
+.btn-descargar {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
 
-    .proyectos-container::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-    }
-    
-    .proyectos-container::-webkit-scrollbar-track {
-      background-color: rgba(30, 3, 128, 0);
-      border-radius: 10px;
-    }
-    
-    .proyectos-container::-webkit-scrollbar-thumb {
-      background-color: #3b82f6;
-      border-radius: 10px;
-    }
-    
-    .proyectos-container::-webkit-scrollbar-thumb:hover {
-      background-color: #1b58bb;
-    }
+.btn-descargar:hover {
+  background-color: #0056b3;
+}
 
-    .proyecto {
-      background-color: #114eb0b3;
-      padding: 1rem;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      min-width: 350px;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+}
 
-    a:visited {
-      color: inherit;
-    }
-    
-    a:focus,
-    a:active {
-      color: inherit;
-      outline: none;
-    }
+h2 {
+  color: #006eff;
+  font-size: 40px;
+}
 
-    .proyecto:hover {
-      transform: scale(1.05);
-    }
-    
-    .btn {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      margin-top: 28px;
-      width: 208px;
-      padding: 15px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-    
-    .btn:hover {
-      background-color: #0056b3;
-    }
+#proyectos {
+  padding: 20px;
+  text-align: center;
+}
 
-    h3 {
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
+.proyectos-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 10px;
+}
 
-    #contenedor{
-      display: flex;
-      flex-direction: row;
-      margin: auto;
-    }
+.proyectos-container .proyecto h3 p {
+  color: rgb(255, 255, 255);
+}
 
-    .contenedor-habilidades h2{
-      align-items: center;
-      padding-left: 150px;
-    }
+.proyectos-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.proyectos-container::-webkit-scrollbar-track {
+  background-color: rgba(30, 3, 128, 0);
+  border-radius: 10px;
+}
+
+.proyectos-container::-webkit-scrollbar-thumb {
+  background-color: #3b82f6;
+  border-radius: 10px;
+}
+
+.proyectos-container::-webkit-scrollbar-thumb:hover {
+  background-color: #1b58bb;
+}
+
+.proyecto {
+  background-color: #114eb0b3;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  min-width: 350px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:focus,
+a:active {
+  color: inherit;
+  outline: none;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  margin-top: 28px;
+  width: 208px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.contenedor-habilidades h2 {
+  align-items: center;
+  padding-left: 150px;
+}
+
+.contenedor-contacto h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  font-size: 15px;
+  color: #888;
+}
 
 
-    .contenedor-contacto h2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
+/* Tablets */
+@media (max-width: 1024px) {
+  #home {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #111;
-      font-size: 15px;
-      color: #888;
-    }
+  .home-foto {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-nombre {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .home-nombre h1,
+  .home-nombre h2,
+  .home-nombre p {
+    text-align: center;
+  }
+
+  .redes-sociales a {
+    font-size: 36px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-habilidades h2 {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .proyecto {
+    min-width: 280px;
+    padding: 0.8rem;
+  }
+
+  .btn,
+  .btn-descargar {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  #sobre-mi p {
+    font-size: 18px;
+  }
+
+  .redes-sociales a {
+    font-size: 28px;
+    margin: 0 5px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
